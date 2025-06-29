@@ -1,0 +1,1 @@
+export { MainLayout } from './MainLayout'; // Imports from src/layouts/MainLayout/index.ts

@@ -1,0 +1,58 @@
+/* src/sections/EducationSection/EducationSection.module.css */
+
+.educationSection {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.educationSection h2 {
+  font-size: 1.8rem;
+  color: #282c34;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.educationItem {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}
+
+.educationItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.educationItem h3 {
+  font-size: 1.3rem;
+  color: #282c34;
+  margin-bottom: 5px;
+}
+
+.degreeInstitution {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.degreeDates {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.degreeDetails {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.placeholderText {
+  color: #888;
+  font-style: italic;
+}

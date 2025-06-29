@@ -20,7 +20,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         {children} {/* This is where the page content (HomePage, AboutPage, etc.) will be rendered */}
       </main>
       <footer className="main-footer">
-        <p>© {new Date().getFullYear()} My Personal Website</p>
+        <p>© {new Date().getFullYear()} Evgeni's Website</p>
       </footer>
     </div>
   );

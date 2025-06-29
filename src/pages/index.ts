@@ -1,0 +1,1 @@
+export { HomePage } from './HomePage'; // Imports from src/pages/HomePage/index.ts

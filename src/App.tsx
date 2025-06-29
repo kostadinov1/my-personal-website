@@ -1,22 +1,18 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
- 
-import MainLayout from './layouts/MainLayout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import NotFoundPage from './pages/NotFoundPage';
-
+// Import HomePage from the pages barrel file
+import { HomePage } from './pages'; // Correct import
+import { MainLayout } from './layouts';
+// Assuming MainLayout is correctly exported from src/layouts/index.ts
 
 function App() {
   return (
-    <MainLayout> {/* We'll use a layout to wrap our routes */}
+    <MainLayout>
       <Routes>
-        {/* Public Routes */}
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-
-        {/* Catch-all for 404 Not Found */}
-        <Route path="*" element={<NotFoundPage />} />
+        {/* Add other routes later */}
+        {/* <Route path="/about" element={<AboutPage />} /> */}
+        {/* <Route path="*" element={<NotFoundPage />} /> */}
       </Routes>
     </MainLayout>
   );
