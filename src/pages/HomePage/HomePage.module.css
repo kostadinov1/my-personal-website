@@ -1,18 +1,15 @@
 /* src/pages/HomePage/HomePage.module.css */
 
 .heroAboutRow {
-     display: flex;
-     flex-direction: column;
-     align-items: stretch;
-    gap: var(--spacing-sm) ;
+  display: flex;
+  flex-direction: column; 
+  align-items: stretch;
+  gap: var(--space-md);
 }
 
 
-@media (min-width: 768px) {
-.heroAboutRow {
-     display: flex;
-     flex-direction: row;
-     align-items: stretch;
-    gap: var(--spacing-md) ;
-}
+@media (min-width: 1024px) {
+  .heroAboutRow {
+    flex-direction: row; 
+  }
 }
