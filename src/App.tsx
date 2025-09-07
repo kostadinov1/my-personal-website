@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // Import HomePage from the pages barrel file
 import { HomePage } from './pages'; // Correct import
