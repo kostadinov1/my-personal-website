@@ -18,12 +18,12 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           {children}
         </main>
       </div>
-<footer className={styles.mainFooter}>
+      <footer className={styles.mainFooter}>
         <div className={styles.footerContent}>
           <p>© {new Date().getFullYear()} Evgeni Kostadinov</p>
           <div className={styles.socialLinks}>
             <a
-              href="https://github.com/kostadinov1" 
+              href="https://github.com/kostadinov1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -31,7 +31,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://linkedin.com/in/evgeni-k-a5a734218" 
+              href="https://linkedin.com/in/evgeni-k-a5a734218"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
