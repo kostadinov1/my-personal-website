@@ -1,54 +1,53 @@
 /* src/sections/SkillsSection/SkillsSection.module.css */
 
 .skillsSection {
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  background-color: var(--white);
+  padding: var(--space-lg); 
+  border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .skillsSection h2 {
-  font-size: 1.8rem;
-  color: #282c34;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #61dafb;
-  padding-bottom: 10px;
+  font-size: var(--font-size-xl); 
+  color: var(--accent-color);
+  margin-bottom: var(--space-md); 
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-xs); 
   display: inline-block;
 }
 
 .skillsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: var(--space-lg); 
 }
 
 .skillCategory h3 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
+  font-size: var(--font-size-lg); 
+  color: var(--text-color);
+  margin-bottom: var(--space-sm); 
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--space-xs); 
 }
 
 .skillTags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: var(--space-xs); 
 }
 
 .skillTag {
-  background-color: #e0e0e0;
-  color: #333;
-  padding: 8px 15px;
-  border-radius: 5px;
-  font-size: 0.95rem;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 5px; /* can be var(--border-radius) or a new var(--border-radius-sm) */
+  font-size: var(--font-size-sm);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skillTag:hover {
-  background-color: #61dafb;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 /* Responsive for Skills */

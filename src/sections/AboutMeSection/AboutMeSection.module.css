@@ -2,28 +2,22 @@
 
 .aboutMeSection {
   flex: 1;
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  background-color: var(--white);
+  padding: var(--space-lg); 
+  border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .aboutMeSection h2 {
-  font-size: 1.8rem;
-  color: #282c34;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #61dafb;
-  padding-bottom: 10px;
+  font-size: var(--font-size-xl); 
+  color: var(--accent-color);
+  margin-bottom: var(--space-md); 
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-xs); 
   display: inline-block;
 }
 
-.placeholderText {
-  color: #888;
-  font-style: italic;
-}
-
-@media (min-width: 768px) {
-  .aboutMeSection {
-  }
+.aboutMeSection p {
+  font-size: var(--font-size-base);
+  color: var(--light-text-color);
 }

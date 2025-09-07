@@ -4,37 +4,34 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--background-color); /* Use variable */
+  background-color: var(--background-color);
 }
 
 .mainContent {
   flex-grow: 1;
-  /* max-width: 960px; */
-  margin: var(--spacing-m) auto; /* Use variable */
-  background-color: var(--white); /* Use variable */
-  border-radius: var(--border-radius); /* Use variable */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Keep this for now, or make it a variable */
+  margin: var(--space-md) auto;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-l); /* Use variable */
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: var(--space-lg);
+  padding: var(--space-md); /* Use new scale for consistent padding */
 }
 
 @media (min-width: 768px) {
   .mainContent {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: var(--spacing-l) auto; /* Use variable */
-    gap: var(--spacing-xl); /* Use variable */
+    padding: var(--space-lg); /* Larger padding on desktop */
+    margin: var(--space-lg) auto;
+    gap: var(--space-xl);
   }
 }
 
 .mainFooter {
   text-align: center;
-  padding: var(--spacing-unit) 0; /* Use variable */
+  padding: var(--space-sm) 0; /* Use new scale (was --spacing-unit) */
   margin-top: auto;
-  background-color: var(--light-gray); /* Use variable */
-  color: var(--light-text-color); /* Use variable */
-  font-size: 0.9em;
+  background-color: var(--light-gray);
+  color: var(--light-text-color);
+  font-size: var(--font-size-sm);
 }

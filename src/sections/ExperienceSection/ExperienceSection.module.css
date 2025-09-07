@@ -1,26 +1,25 @@
 /* src/sections/ExperienceSection/ExperienceSection.module.css */
 
 .experienceSection {
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  background-color: var(--white);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .experienceSection h2 {
-  font-size: 1.8rem;
-  color: #282c34;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #61dafb;
-  padding-bottom: 10px;
+  font-size: var(--font-size-xl);
+  color: var(--accent-color);
+  margin-bottom: var(--space-md);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-xs);
   display: inline-block;
 }
 
 .experienceItem {
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px dashed #eee;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--border-color);
 }
 
 .experienceItem:last-child {
@@ -30,27 +29,27 @@
 }
 
 .experienceItem h3 {
-  font-size: 1.3rem;
-  color: #282c34;
-  margin-bottom: 5px;
+  font-size: var(--font-size-lg);
+  color: var(--accent-color);
+  margin-bottom: var(--space-xs);
 }
 
 .jobCompanyLocation {
   font-weight: bold;
-  color: #555;
-  margin-bottom: 5px;
+  color: var(--light-text-color);
+  margin-bottom: var(--space-xs);
 }
 
 .jobDates {
   font-style: italic;
   color: #777;
-  margin-bottom: 10px;
+  margin-bottom: var(--space-sm);
 }
 
 .experienceItem ul {
-  padding-left: 20px;
+  padding-left: var(--space-md);
 }
 
 .experienceItem li {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-xs);
 }
