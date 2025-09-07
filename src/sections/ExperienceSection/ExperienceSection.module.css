@@ -53,3 +53,8 @@
 .experienceItem li {
   margin-bottom: var(--space-xs);
 }
+
+.headingIcon {
+  margin-right: var(--space-sm);
+  color: var(--primary-color);
+}

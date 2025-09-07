@@ -22,6 +22,7 @@ export const skillsData: ISkillCategory[] = [
       { id: 202, name: 'Node.js' },
       { id: 203, name: 'Styled Components' },
       { id: 204, name: 'Django' },
+      { id: 204, name: 'FastAPI' },
     ],
   },
   {

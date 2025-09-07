@@ -56,3 +56,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.headingIcon {
+  margin-right: var(--space-sm);
+  color: var(--primary-color);
+}

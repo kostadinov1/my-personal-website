@@ -2,10 +2,14 @@
 import React from 'react';
 import styles from './ExperienceSection.module.css';
 import { experienceData } from '../../data/experience';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 const ExperienceSection: React.FC = () => (
   <section className={styles.experienceSection}>
-    <h2>Work Experience</h2>
+    <h2>
+      <FontAwesomeIcon icon={faBriefcase} className={styles.headingIcon} /> Work Experience
+    </h2>
     {experienceData.map((job) => (
       <div key={job.id} className={styles.experienceItem}>
         <h3>{job.title}</h3>

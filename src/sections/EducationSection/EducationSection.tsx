@@ -3,16 +3,21 @@ import React from 'react';
 import styles from './EducationSection.module.css';
 import { educationData } from '../../data/education';
 
+// Font Awesome Imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+
 const EducationSection: React.FC = () => {
   return (
     <section className={styles.educationSection}>
-      <h2>Education & Learning</h2>
+      <h2>
+        <FontAwesomeIcon icon={faGraduationCap} className={styles.headingIcon} /> Education & Learning
+      </h2>
       {educationData.map((edu) => (
         <div key={edu.id} className={styles.educationItem}>
           <h3>{edu.degree}</h3>
           <p className={styles.degreeInstitution}>{edu.institution}</p>
           <p className={styles.degreeDates}>{edu.dates}</p>
-          {/* Conditionally render details if they exist */}
           {edu.details && (
             <ul className={styles.detailsList}>
               {edu.details.map((detail, index) => (

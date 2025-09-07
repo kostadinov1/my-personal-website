@@ -1,11 +1,17 @@
 // src/sections/SkillsSection/SkillsSection.tsx
 import React from 'react';
 import styles from './SkillsSection.module.css';
-import { skillsData } from '../../data/skills'; // Import our new data
+import { skillsData } from '../../data/skills';
+
+// Font Awesome Imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCogs } from '@fortawesome/free-solid-svg-icons';
 
 const SkillsSection: React.FC = () => (
   <section className={styles.skillsSection}>
-    <h2>Skills</h2>
+    <h2>
+      <FontAwesomeIcon icon={faCogs} className={styles.headingIcon} /> Skills
+    </h2>
     <div className={styles.skillsGrid}>
       {skillsData.map((category) => (
         <div key={category.id} className={styles.skillCategory}>

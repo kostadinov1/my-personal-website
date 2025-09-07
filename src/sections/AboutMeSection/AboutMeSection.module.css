@@ -21,3 +21,8 @@
   font-size: var(--font-size-base);
   color: var(--light-text-color);
 }
+
+.headingIcon {
+  margin-right: var(--space-sm);
+  color: var(--primary-color);
+}
