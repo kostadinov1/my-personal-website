@@ -1,13 +1,26 @@
 import React from 'react';
-// Import EducationSection from the sections barrel file
-import { EducationSection } from '../../sections';
+import {
+  HeroSection,
+  AboutMeSection,
+  SkillsSection,
+  ExperienceSection,
+  EducationSection
+} from '../../sections';
+import styles from './HomePage.module.css'; // Import HomePage specific styles
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <h1>My Personal Website</h1> {/* A simple title for the page */}
+      {/* Wrap Hero and AboutMe in a row container */}
+      <div className={styles.heroAboutRow}> {/* Use a custom class for this row */}
+        <HeroSection />
+        <AboutMeSection />
+      </div>
+
+      <SkillsSection />
+      <ExperienceSection />
+      {/* Add EducationSection here if you want it on the homepage */}
       <EducationSection />
-      {/* Add other sections here later */}
     </>
   );
 };

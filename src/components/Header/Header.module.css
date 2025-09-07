@@ -1,0 +1,21 @@
+/* src/components/Header/Header.module.css */
+
+.mainHeader {
+  background-color: var(--accent-color); /* Use variable */
+  padding: var(--spacing-unit) 0; /* Use variable */
+  color: var(--white); /* Use variable */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navLink {
+  color: var(--white); /* Use variable */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-color); /* Use variable */
+}

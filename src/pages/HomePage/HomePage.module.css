@@ -1,0 +1,12 @@
+/* src/pages/HomePage/HomePage.module.css */
+
+.heroAboutRow {
+  /* This container will be styled by MainLayout.module.css's .sectionsRow */
+  /* We might add specific padding or margin here if needed, but for now,
+     we rely on MainLayout's styling for the flex behavior. */
+     display: flex;
+     align-items: stretch;
+    gap: var(--spacing-m) ;
+}
+
+/* You can add other HomePage specific styles here if needed */

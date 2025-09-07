@@ -4,44 +4,37 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Removed background-color from here, moved to body in global.css */
-}
-
-.mainHeader {
-  background-color: #282c34;
-  padding: 1rem 0;
-  color: white;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navLink {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navLink:hover {
-  color: #61dafb;
+  background-color: var(--background-color); /* Use variable */
 }
 
 .mainContent {
   flex-grow: 1;
-  padding: 20px;
-  max-width: 960px;
-  margin: 20px auto; /* Center the content */
-  background-color: white; /* Background for the content area */
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* max-width: 960px; */
+  margin: var(--spacing-m) auto; /* Use variable */
+  background-color: var(--white); /* Use variable */
+  border-radius: var(--border-radius); /* Use variable */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Keep this for now, or make it a variable */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l); /* Use variable */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: var(--spacing-l) auto; /* Use variable */
+    gap: var(--spacing-xl); /* Use variable */
+  }
 }
 
 .mainFooter {
   text-align: center;
-  padding: 1rem 0;
-  margin-top: auto; /* Push footer to the bottom */
-  background-color: #e0e0e0;
-  color: #555;
+  padding: var(--spacing-unit) 0; /* Use variable */
+  margin-top: auto;
+  background-color: var(--light-gray); /* Use variable */
+  color: var(--light-text-color); /* Use variable */
   font-size: 0.9em;
 }
