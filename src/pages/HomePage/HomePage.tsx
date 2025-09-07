@@ -1,26 +1,34 @@
+// src/pages/HomePage/HomePage.tsx
 import React from 'react';
 import {
   HeroSection,
   AboutMeSection,
   SkillsSection,
   ExperienceSection,
-  EducationSection
+  EducationSection,
 } from '../../sections';
-import styles from './HomePage.module.css'; // Import HomePage specific styles
+import styles from './HomePage.module.css';
+import { AnimatedSection } from '../../components';
 
 const HomePage: React.FC = () => {
   return (
     <>
-      {/* Wrap Hero and AboutMe in a row container */}
-      <div className={styles.heroAboutRow}> {/* Use a custom class for this row */}
+      <div className={styles.heroAboutRow}>
         <HeroSection />
         <AboutMeSection />
       </div>
 
-      <SkillsSection />
-      <ExperienceSection />
-      {/* Add EducationSection here if you want it on the homepage */}
-      <EducationSection />
+      <AnimatedSection>
+        <SkillsSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <ExperienceSection />
+      </AnimatedSection>
+      
+      <AnimatedSection>
+        <EducationSection />
+      </AnimatedSection>
     </>
   );
 };

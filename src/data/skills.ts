@@ -1,7 +1,6 @@
 // src/data/skills.ts
 import type { ISkillCategory } from '../types';
 
-// Import all the icons we need
 import {
   faPython,
   faJs,

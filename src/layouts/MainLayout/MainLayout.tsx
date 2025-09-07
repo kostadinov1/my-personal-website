@@ -13,7 +13,6 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className={styles.appContainer}>
       <Header />
-      {/* Add a wrapper for content that needs max-width and centering */}
       <div className={styles.contentWrapper}>
         <main className={styles.mainContent}>
           {children}
@@ -24,7 +23,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <p>© {new Date().getFullYear()} Evgeni Kostadinov</p>
           <div className={styles.socialLinks}>
             <a
-              href="https://github.com/kostadinov1" // <-- IMPORTANT: REPLACE WITH YOUR GITHUB URL
+              href="https://github.com/kostadinov1" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -32,7 +31,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://linkedin.com/in/evgeni-k-a5a734218" // <-- IMPORTANT: REPLACE WITH YOUR LINKEDIN URL
+              href="https://linkedin.com/in/evgeni-k-a5a734218" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"

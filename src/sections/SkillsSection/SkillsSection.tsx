@@ -4,7 +4,6 @@ import styles from './SkillsSection.module.css';
 import { skillsData } from '../../data/skills';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Import the section header icon AND our default/fallback icon
 import { faCogs, faCode } from '@fortawesome/free-solid-svg-icons';
 
 const SkillsSection: React.FC = () => (
