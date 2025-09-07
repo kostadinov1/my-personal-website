@@ -33,16 +33,22 @@
 .skillTags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs); 
+  gap: var(--space-sm); /* Increased gap slightly for better spacing */
 }
 
+/* Replace the old .skillTag rule with this */
 .skillTag {
   background-color: var(--light-gray);
   color: var(--text-color);
   padding: var(--space-xs) var(--space-sm);
-  border-radius: 5px; /* can be var(--border-radius) or a new var(--border-radius-sm) */
+  border-radius: 5px;
   font-size: var(--font-size-sm);
   transition: background-color 0.3s ease, color 0.3s ease;
+  
+  /* New styles for flex layout */
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs); /* Space between icon and text */
 }
 
 .skillTag:hover {
@@ -50,6 +56,12 @@
   color: var(--white);
 }
 
+/* Add this new rule for the icon */
+.skillIcon {
+  /* The icon will inherit its color from the parent .skillTag */
+  /* This means it will be dark by default and turn white on hover */
+  width: 1.2em; /* Give it a consistent width */
+}
 /* Responsive for Skills */
 @media (min-width: 1024px) {
   .skillsGrid {

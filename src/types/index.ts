@@ -1,7 +1,9 @@
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export interface ISkill {
   id: number;
   name: string;
+  icon?: IconDefinition;
 }
 
 export interface ISkillCategory {
