@@ -56,3 +56,8 @@
   color: #888;
   font-style: italic;
 }
+
+.detailsList {
+  padding-left: 20px;
+  margin-top: 10px;
+}

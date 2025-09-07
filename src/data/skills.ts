@@ -1,5 +1,5 @@
 // src/data/skills.ts
-import { ISkillCategory } from '../types';
+import { type ISkillCategory } from '../types';
 
 export const skillsData: ISkillCategory[] = [
   {

@@ -23,5 +23,5 @@ export interface IEducation {
   degree: string;
   institution: string;
   dates: string;
-  details?: string; // Optional details
+  details?: string[];
 }

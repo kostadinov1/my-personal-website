@@ -1,27 +1,29 @@
+// src/sections/EducationSection/EducationSection.tsx
 import React from 'react';
-import styles from './EducationSection.module.css'; // Import styles
+import styles from './EducationSection.module.css';
+import { educationData } from '../../data/education';
 
 const EducationSection: React.FC = () => {
   return (
     <section className={styles.educationSection}>
-      <h2>Education</h2>
-      <div className={styles.educationItem}>
-        <h3>Web Developer</h3>
-        <p className={styles.degreeInstitution}>SoftUni Bulgaria</p>
-        <p className={styles.degreeDates}>2022 - Present</p>
-        <p className={styles.degreeDetails}>Python and Javascript web development</p>
-      </div>
-      <div className={styles.educationItem}>
-        <h3>Currently Studying</h3>
-        <p>
-          <h4 className={styles.placeholderText}>DevOps Upskill Program</h4>
-          <div className={styles.placeholderText}>Linux System Administration</div>
-          <div className={styles.placeholderText}>Conteinerization</div>
-          <div className={styles.placeholderText}>Azure</div>
-          <div className={styles.placeholderText}>Kubernetes</div>
-          <div className={styles.placeholderText}>CI/CD monitoring</div>
-        </p>
-      </div>
+      <h2>Education & Learning</h2>
+      {educationData.map((edu) => (
+        <div key={edu.id} className={styles.educationItem}>
+          <h3>{edu.degree}</h3>
+          <p className={styles.degreeInstitution}>{edu.institution}</p>
+          <p className={styles.degreeDates}>{edu.dates}</p>
+          {/* Conditionally render details if they exist */}
+          {edu.details && (
+            <ul className={styles.detailsList}>
+              {edu.details.map((detail, index) => (
+                <li key={index} className={styles.degreeDetails}>
+                  {detail}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
     </section>
   );
 };
