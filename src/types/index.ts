@@ -27,3 +27,18 @@ export interface IEducation {
   dates: string;
   details?: string[];
 }
+
+
+export interface IProjectLinks {
+  github?: string;  
+  demo?: string;  
+}
+
+export interface IProject {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[]; 
+  screenshots: string[];  
+  links: IProjectLinks;
+}

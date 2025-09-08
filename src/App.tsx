@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 // Import HomePage from the pages barrel file
-import { HomePage } from './pages'; // Correct import
+import { HomePage, ProjectsPage } from './pages'; // Correct import
 import { MainLayout } from './layouts';
 // Assuming MainLayout is correctly exported from src/layouts/index.ts
 
@@ -9,6 +9,7 @@ function App() {
     <MainLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         {/* Add other routes later */}
         {/* <Route path="/about" element={<AboutPage />} /> */}
         {/* <Route path="*" element={<NotFoundPage />} /> */}

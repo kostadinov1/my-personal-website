@@ -1,0 +1,32 @@
+/* src/pages/ProjectsPage/ProjectsPage.module.css */
+
+.projectsPage {
+  width: 100%;
+}
+
+.pageTitle {
+  font-size: var(--font-size-xxl);
+  color: var(--accent-color);
+  margin-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-sm);
+  display: inline-block;
+}
+
+.headingIcon {
+  margin-right: var(--space-md);
+  color: var(--primary-color);
+}
+
+.pageSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--light-text-color);
+  margin-bottom: var(--space-xl);
+  max-width: 80ch; /* Limit line length for readability */
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}

@@ -7,8 +7,8 @@ const Header: React.FC = () => {
     <header className={styles.mainHeader}> {/* Use the CSS Module class */}
       <nav>
         <Link to="/" className={styles.navLink}>Home</Link>
-        <Link to="/" className={styles.navLink}>About</Link>
-        <Link to="/" className={styles.navLink}>Projects</Link> {/* Add Projects */}
+        {/* <Link to="/" className={styles.navLink}>About</Link> */}
+        <Link to="/projects" className={styles.navLink}>Projects</Link> {/* Add Projects */}
         <Link to="/" className={styles.navLink}>Contact</Link> {/* Add Contact */}
       </nav>
     </header>

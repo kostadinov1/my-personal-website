@@ -51,10 +51,10 @@
   gap: var(--space-xs); 
 }
 
-.skillTag:hover {
+/* .skillTag:hover {
   background-color: var(--primary-color);
   color: var(--white);
-}
+} */
 
 
 .skillIcon {

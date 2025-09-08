@@ -1,1 +1,2 @@
-export { HomePage } from './HomePage'; // Imports from src/pages/HomePage/index.ts
+export { HomePage } from './HomePage';
+export { default as ProjectsPage } from './ProjectsPage/ProjectsPage';
