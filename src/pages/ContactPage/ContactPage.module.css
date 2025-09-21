@@ -1,0 +1,95 @@
+/* src/pages/ContactPage/ContactPage.module.css */
+
+.contactPage {
+  width: 100%;
+  max-width: 800px; /* Constrain form width for readability */
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: var(--font-size-xxl);
+  color: var(--accent-color);
+  margin-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-sm);
+  display: inline-block;
+}
+
+.headingIcon {
+  margin-right: var(--space-md);
+  color: var(--primary-color);
+}
+
+.pageSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--light-text-color);
+  margin-bottom: var(--space-xl);
+  max-width: 80ch;
+}
+
+.pageSubtitle a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pageSubtitle a:hover {
+  text-decoration: underline;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: bold;
+  margin-bottom: var(--space-xs);
+  color: var(--text-color);
+}
+
+.formGroup input,
+.formGroup textarea {
+  font-size: var(--font-size-base);
+  padding: var(--space-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+.errorMsg {
+  color: var(--error-color);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-xs);
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* Don't stretch full width */
+}
+
+.submitButton:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}

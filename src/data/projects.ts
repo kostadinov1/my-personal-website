@@ -16,6 +16,22 @@ import dogramaScreenshot10 from '../assets/dogramavarna-screenshots/screenshot-1
 import dogramaScreenshot11 from '../assets/dogramavarna-screenshots/screenshot-11.png';
 import dogramaScreenshot12 from '../assets/dogramavarna-screenshots/screenshot-12.png';
 
+
+import fitappScreenshot1 from '../assets/fitapp-screenshots/fitapp-screenshot-1.png';
+import fitappScreenshot2 from '../assets/fitapp-screenshots/fitapp-screenshot-2.png';
+import fitappScreenshot3 from '../assets/fitapp-screenshots/fitapp-screenshot-3.png';
+import fitappScreenshot4 from '../assets/fitapp-screenshots/fitapp-screenshot-4.png';
+import fitappScreenshot5 from '../assets/fitapp-screenshots/fitapp-screenshot-5.png';
+import fitappScreenshot6 from '../assets/fitapp-screenshots/fitapp-screenshot-6.png';
+import fitappScreenshot7 from '../assets/fitapp-screenshots/fitapp-screenshot-7.png';
+import fitappScreenshot8 from '../assets/fitapp-screenshots/fitapp-screenshot-8.png';
+
+
+import portfolioScreenshot1 from '../assets/fitapp-screenshots/fitapp-screenshot-1.png';
+import portfolioScreenshot2 from '../assets/fitapp-screenshots/fitapp-screenshot-2.png';
+import portfolioScreenshot3 from '../assets/fitapp-screenshots/fitapp-screenshot-3.png';
+
+
 export const projectsData: IProject[] = [
   {
     id: 1,
@@ -49,9 +65,9 @@ export const projectsData: IProject[] = [
       'My personal portfolio, built from scratch using a modern frontend stack. This site serves as a live demonstration of my React, TypeScript, and design skills. It is fully data-driven, deployed via a CI/CD pipeline on Netlify, and features a responsive, clean design. (More features like a backend + user auth coming soon!)',
     technologies: ['React', 'TypeScript', 'Framer Motion', 'CSS Modules', 'Netlify'],
     screenshots: [
-      'https://via.placeholder.com/800x600/f4f7f6/333?text=Homepage+Desktop',
-      'https://via.placeholder.com/800x600/f4f7f6/333?text=Skills+Section',
-      'https://via.placeholder.com/800x600/f4f7f6/333?text=Responsive+Mobile',
+      portfolioScreenshot1,
+      portfolioScreenshot2,
+      portfolioScreenshot3
     ],
     links: {
       github: 'https://github.com/kostadinov1/my-personal-website',
@@ -64,7 +80,14 @@ export const projectsData: IProject[] = [
       'A concept for a fitness tracking application, focusing on a clean user interface and intuitive workout logging. Built to practice state management and component composition in a real-world scenario.',
     technologies: ['React', 'TypeScript', 'Vite'],
     screenshots: [
-      'https://via.placeholder.com/800x600/282c34/61dafb?text=Workout+Logger',
+      fitappScreenshot1,
+      fitappScreenshot2,
+      fitappScreenshot3,
+      fitappScreenshot4,
+      fitappScreenshot5,
+      fitappScreenshot6,
+      fitappScreenshot7,
+      fitappScreenshot8,
     ],
     links: {
       github: 'https://github.com/kostadinov1/fitness-app',
@@ -77,7 +100,7 @@ export const projectsData: IProject[] = [
       'An internal enterprise tool designed to streamline data processing workflows. This application interfaces with proprietary AI APIs to automate the transformation and validation of large datasets, significantly reducing manual effort and potential for error.',
     technologies: ['React', 'JavaScript', 'Internal APIs', 'Data Processing'],
     screenshots: [
-      'https://via.placeholder.com/800x600/333/eee?text=Internal+Tool+UI',
+      'No Images Availible',
     ],
     links: {
       // No public links available for this internal project

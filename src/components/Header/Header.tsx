@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Link to="/" className={styles.navLink}>Home</Link>
         {/* <Link to="/" className={styles.navLink}>About</Link> */}
         <Link to="/projects" className={styles.navLink}>Projects</Link> {/* Add Projects */}
-        <Link to="/" className={styles.navLink}>Contact</Link> {/* Add Contact */}
+        <Link to="/contact" className={styles.navLink}>Contact</Link> {/* Add Contact */}
       </nav>
     </header>
   );
