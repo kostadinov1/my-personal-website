@@ -67,8 +67,8 @@ const ContactPage: React.FC = () => {
         {/* The form tag itself does not need the onSubmit anymore, react-hook-form handles it */}
         <form
           name="contact"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          // data-netlify="true"
+          // data-netlify-honeypot="bot-field" 
           onSubmit={handleSubmit(onSubmit)}
           className={styles.contactForm}
         >
