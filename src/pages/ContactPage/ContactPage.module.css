@@ -93,3 +93,25 @@
   background-color: var(--secondary-color);
   transform: translateY(-2px);
 }
+
+/* Add these at the end of ContactPage.module.css */
+
+.notification {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius);
+  margin-top: var(--space-md);
+  font-weight: bold;
+  text-align: center;
+}
+
+.success {
+  background-color: #d4edda; /* A light green */
+  color: #155724; /* A dark green */
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da; /* A light red */
+  color: var(--error-color);
+  border: 1px solid #f5c6cb;
+}
